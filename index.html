@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Kalkulator Keuangan</title>
+</head>
+<body>
+    <h1>Kalkulator Keuangan</h1>
+    <div class="calculator">
+        <div class="form-group">
+            <label for="jumlahPokok">Jumlah Pokok (Rp):</label>
+            <input type="text" id="jumlahPokok" placeholder="Masukkan jumlah pokok...">
+        </div>
+        <div class="form-group">
+            <label for="sukuBunga">Bunga:</label>
+            <input type="text" id="sukuBunga" placeholder="Masukkan tingkat Bunga...">
+        </div>
+        <div class="form-group">
+            <label for="waktu">Periode:</label>
+            <input type="text" id="waktu" placeholder="Masukkan jumlah Periode...">
+        </div>
+        <div class="form-group">
+            <label for="jenisPilihan">Tipe Perhitungan:</label>
+            <select id="jenisPilihan">
+                <option value="tunggal">Bunga Tunggal</option>
+                <option value="majemuk">Bunga Majemuk</option>
+                <option value="anunitas">Anuitas</option>
+            </select>
+        </div>
+        <button onclick="hitungBunga()">Hitung</button>
+        <h2>Hasil: <span id="result">0</span></h2>
+        <h1>Tabel Keuangan</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Periode</th>
+                        <th>Bunga (Rp)</th>
+                        <th style="display: none;" id="bungaPokok">Bunga pokok (Rp)</th>
+                        <th style="display: none;" id="jumlahAngsuran">Jumlah angsuran (Rp)</th>
+                        <th>Saldo Tersisa (Rp)</th>
+                    </tr>
+                </thead>
+                <tbody id="hasilPerhitungan">
+                    <!-- Hasil perhitungan akan muncul di sini -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="assets/index.js"></script>
+</body>
+</html>

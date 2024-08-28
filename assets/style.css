@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f59d06;
+}
+h1 {
+    text-align: center;
+}
+.calculator {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 5px solid #bc1f1f;
+    border-radius: 10px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+input[type="text"], select {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #14c09e;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0671f5;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.table-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #bc1f1f;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    border: 1;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ef0000;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #14c09e;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #6f0a0a;
+}
